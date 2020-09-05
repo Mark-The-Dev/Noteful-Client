@@ -24,7 +24,7 @@ class AddNote extends React.Component {
    let newDate = new Date().toISOString()
     let newItem = JSON.stringify({
       name: name,
-      folderId: folder,
+      folderId: folder || document.getElementById('add-folder').value,
       content: description,
       modified: newDate
     })
