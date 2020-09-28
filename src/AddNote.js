@@ -21,12 +21,10 @@ class AddNote extends React.Component {
   }
 
   handleClickAddNote = (name, description, folder) => {
-   let newDate = new Date().toISOString()
     let newItem = JSON.stringify({
       name: name,
       folderId: folder || document.getElementById('add-folder').value,
       content: description,
-      modified: newDate
     })
     let error;
 
