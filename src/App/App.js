@@ -53,6 +53,7 @@ class App extends Component {
     }
 
     handleAddNote = note => {
+        console.log('this is running', note.Note)
         this.setState({
             notes: [...this.state.notes, note]
         })
