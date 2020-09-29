@@ -62,7 +62,7 @@ class AddFolder extends React.Component {
 
   render() {
     //console.log(this.handleClickAddFolder('hi'))
-    console.log(this.state.name)
+    
     return (
       <div>
 
